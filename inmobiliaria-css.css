@@ -1,0 +1,217 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000000; /* Color del texto */
+    background-image: url('background West Hollywood.png'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Logo */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; /* Asegura que el logo no sea demasiado grande */
+    height: auto;
+}
+
+/* Group Container */
+#grupo {
+    text-align: center;
+    color: #f8f9fa;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+#grupo h1, #grupo h2 {
+    margin: 0;
+}
+
+#grupo h2 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+}
+
+/* General Links */
+a {
+    display: inline-block; /* Hace que el padding sea efectivo y permite mejor centrado */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    padding: 8px 16px; /* Espaciado interior para hacerlos más clicables */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #0073e6; /* Color inicial */
+    background-color: #f4f4f4; /* Color de fondo inicial */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para color y fondo */
+}
+
+a:hover, a:focus {
+    color: #ffffff; /* Color del texto al pasar el mouse o enfocar */
+    background-color: #3498db; /* Color del fondo al pasar el mouse o enfocar */
+}
+
+/* Navigation */
+nav {
+    background-color: #134271;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: #0275d8; /* Azul ligeramente más claro para contraste */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+nav a#seleccionado {
+    background-color: #3498db;
+    color: #f8f9fa;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Ligero levantamiento para indicar selección */
+}
+
+/* Form Sections */
+section {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ancho responsivo */
+    max-width: 600px; /* Ancho máximo */
+}
+
+section h2 {
+    color: #02457a; /* Refleja el color del encabezado para mantener consistencia */
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #02457a; /* Refleja el color del encabezado para mantener consistencia */
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#buscarBtn {
+    background-color: #49a6e9; /* Color de fondo para el botón */
+    color: white; /* Texto en color blanco */
+    padding: 12px 24px; /* Padding alrededor del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano para indicar que es clickeable */
+    transition: background 0.1s, transform 0.8s; /* Transición suave para los efectos */
+}
+
+#buscarBtn:hover {
+    background-color: #02457a; /* Color del fondo al pasar el ratón */
+    transform: scale(1.05); /* Ligero aumento de tamaño al pasar el ratón */
+}
+
+/* Article Styles */
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    max-width: 400px; /* Imágenes más grandes para mejor visualización */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+article p {
+    font-size: 18px; /* Tamaño de fuente más grande para mejor legibilidad */
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* Un azul oscuro elegante */
+    color: #ecf0f1; /* Contraste claro para el texto */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    nav a {
+        display: block; /* Apilar enlaces en pantallas más pequeñas */
+        margin-bottom: 10px;
+    }
+
+    header, section {
+        padding: 10px; /* Menos padding en dispositivos más pequeños */
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}

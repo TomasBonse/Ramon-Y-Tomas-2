@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramon Y Tomas Propiedades</title>
+    <link rel="stylesheet" href="./casas-css.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="" id="logo">
+        <div id="grupo">
+            <h1 id="tittulo">Ramon Y Tomas Propiedades </h1>
+            <h2 id="Lema">Encontrar tu hogar</h2>
+        </div>
+    </header>
+    <nav>
+        <a href="Casas.html" id="seleccionado">Casas</a>
+        <a href="Departamentos.html">Departamentos</a>
+    </nav>
+    <div id="alquiler">
+        <h2 id="Alquileres">Casas en Alquiler</h2>
+        <div class="container">
+            <div class="text-container" data-ambientes="3" data-zona="CABA">
+                <img id="casa1" src="./casa 1.jpg" alt="">
+                <h4>$150.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona norte">
+                <img id="casa2" src="./casa 2.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona norte">
+                <img id="casa3" src="./casa 3.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="1" data-zona="zona norte">
+                <img id="casa4" src="./casa 4.jpg" alt="">
+                <h4>$120.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona sur">
+                <img id="casa5" src="./casa 5.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="1" data-zona="CABA">
+                <img id="casa6" src="./casa 6.jpg" alt="">
+                <h4>$200.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="CABA">
+                <img id="casa7" src="./casa 7.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="3" data-zona="CABA">
+                <img id="casa8" src="casa 8.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona oeste">
+                <img id="casa9" src="casa 9.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+            <div class="text-container" data-ambientes="3" data-zona="zona oeste">
+                <img id="casa10" src="casa 10.jpg" alt="">
+                <h4>$100.000 por mes</h4>
+            </div>
+        </div>
+    </div>
+       
+    <div id="ventas">
+        <h2 id="ventasTitulo">Casas en Venta</h2>
+        <div class="container">
+            <div class="text-container" data-ambientes="3" data-zona="CABA">
+                <img id="casa11" src="./casa 11.jpg" alt="">
+                <h4>$2.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona norte">
+                <img id="casa12" src="./casa 12.jpg" alt="">
+                <h4>$3.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona norte">
+                <img id="casa13" src="./casa 13.jpg" alt="">
+                <h4>$2.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="1" data-zona="zona norte">
+                <img id="casa14" src="./casa 14.jpg" alt="">
+                <h4>$4.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona sur">
+                <img id="casa15" src="./casa 15.jpg" alt="">
+                <h4>$2.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="1" data-zona="CABA">
+                <img id="casa16" src="./casa 16.jpg" alt="">
+                <h4>$3.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="CABA">
+                <img id="casa17" src="./casa 17.jpg" alt="">
+                <h4>$4.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="3" data-zona="CABA">
+                <img id="casa18" src="casa 18.jpg" alt="">
+                <h4>$4.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="2" data-zona="zona oeste">
+                <img id="casa19" src="casa 19.jpg" alt="">
+                <h4>$3.000.000 precio</h4>
+            </div>
+            <div class="text-container" data-ambientes="3" data-zona="zona oeste">
+                <img id="casa20" src="casa 20.jpg" alt="">
+                <h4>$2.000.000 precio</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="formulario">
+        <form id="filterForm">
+            <label id="Ambientes" for="ambientes2">Ambientes</label>
+            <select name="ambientes" id="ambientes2">
+                <option value="">Todos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <label id="zonas" for="zonas2">Zonas</label>
+            <select name="zonas" id="zonas2">
+                <option value="">Todas</option>
+                <option value="CABA">CABA</option>
+                <option value="zona norte">zona norte</option>
+                <option value="zona sur">zona sur</option>
+                <option value="zona oeste">zona oeste</option>
+            </select>
+        </form>
+    </div>
+    <hr>
+    <footer id="pie-de-pagina">
+        <ul id="pagina">
+            <li id="facebook">Nos encontraran en facebook: RamonYTomas</li>
+            <li id="whattsApp">Nos puede conctactar por whattsApp: 11-6789-2354</li>
+            <li id="mail3">Por mail como: RamonYTomas@gmail.com</li>
+            <li id="Instragram">Y por Instagram como: Ramon@Tomas</li>
+        </ul>
+    </footer>
+
+    <script>
+$(document).ready(function() {
+            // Función para obtener los parámetros de la URL
+            function getURLParams() {
+                const params = {};
+                // Divide la cadena de consulta en pares clave-valor
+                window.location.search.substring(1).split('&').forEach(function(pair) {
+                    const [key, value] = pair.split('=');
+                    // Decodifica y agrega cada par al objeto params
+                    params[decodeURIComponent(key)] = decodeURIComponent(value);
+                });
+                return params;
+            }
+
+            // Función para filtrar el contenido basado en los selectores de "ambientes" y "zonas"
+            function filterContent() {
+                const selectedAmbientes = $('#ambientes2').val();  // Obtener valor del selector "ambientes"
+                const selectedZona = $('#zonas2').val();  // Obtener valor del selector "zonas"
+
+                // Mostrar todos los contenedores antes de aplicar filtros
+                $('.text-container').show();
+
+                // Iterar sobre cada contenedor de texto y aplicar los filtros
+                $('.text-container').each(function() {
+                    const containerAmbientes = $(this).data('ambientes');  // Obtener atributo "data-ambientes"
+                    const containerZona = $(this).data('zona');  // Obtener atributo "data-zona"
+                    let showContainer = true;
+
+                    // Lógica de filtrado según los valores seleccionados
+                    if (selectedAmbientes && selectedZona) {
+                        showContainer = selectedAmbientes == containerAmbientes && selectedZona == containerZona;
+                    } else if (selectedAmbientes) {
+                        showContainer = selectedAmbientes == containerAmbientes;
+                    } else if (selectedZona) {
+                        showContainer = selectedZona == containerZona;
+                    }
+
+                    // Ocultar contenedor si no coincide con los filtros
+                    if (!showContainer) {
+                        $(this).hide();
+                    }
+                });
+
+                // Mostrar mensaje si no se encuentran resultados
+                if ($('.text-container:visible').length === 0) {
+                    $('#resultado').text('No se encontraron resultados');
+                } else {
+                    $('#resultado').empty();
+                }
+            }
+
+            // Función para aplicar y mostrar los filtros basados en los parámetros de la URL
+            function applyURLFilters() {
+                const params = getURLParams();  // Obtener parámetros de la URL
+                // Aplicar parámetros de "ambientes" al selector
+                if (params.ambientes) {
+                    $('#ambientes2').val(params.ambientes);
+                }
+                // Aplicar parámetros de "zonas" al selector
+                if (params.zona) {
+                    $('#zonas2').val(params.zona);
+                }
+                filterContent();  // Filtrar contenido basado en los selectores actualizados
+            }
+
+            // Filtrar contenido cuando se cambian los selectores
+            $('#filterForm select').on('change', filterContent);
+            // Aplicar filtros de URL cuando se carga la página
+            applyURLFilters();
+        });
+    </script>
+</body>
+</html>

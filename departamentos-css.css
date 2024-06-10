@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #000000; /* Color de 'Ramon Y Tomas Propiedades' y el lema */
+    line-height: 1.6;
+    background-image: url('background West Hollywood.png'); /* Asegúrate de que la ruta y la extensión sean correctas */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#grupo { /* El título está en el #grupo, si cambias esto cambias el 'Ramon Y Tomas Propiedades' y el lema */
+    text-align: center;
+    margin: 0;
+    color: #f8f9fa;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#grupo h1, #grupo h2 {
+    margin: 0;
+}
+
+#grupo h2 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+}
+
+#logo { /* Cambiar tamaño del logo */
+    width: 100%; /* Cambiar tamaño aquí */
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+a { /* Botones Enlaces Generales */
+    color: #0073e6; /* Un azul claro para mayor visibilidad */
+    transition: color 0.3s ease;
+}
+
+a {
+    display: inline-block; /* Hace que el padding sea efectivo y permite centrar mejor */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    padding: 8px 16px; /* Espaciado interior para hacerlos más clickeables */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #0073e6; /* Color inicial */
+    background-color: #f4f4f4; /* Color de fondo inicial */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para color y fondo */
+}
+
+a:hover, a:focus {
+    color: #ffffff; /* Color de texto al pasar el mouse o enfocar */
+    background-color: #3498db; /* Color de fondo al pasar el mouse o enfocar */
+    text-decoration: none; /* Asegura que no haya subrayado al pasar el mouse */
+}
+
+/* Centrado de los Enlaces en la Navegación */
+nav {
+    background-color: #134271; /* Fondo para la barra de navegación */
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    width: 20%;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+nav a#seleccionado {
+    background-color: #3498db;
+    color: #f8f9fa;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Estilos específicos para las secciones */
+#alquiler, #ventas, #formulario {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#alquiler h2, #ventas h2 {
+    color: #007bff; /* Controla el color del título de las DIVs de alquiler y venta */
+}
+
+h4 { /* Todo lo que está escrito con tamaño h4 */
+    margin: 5px 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.text-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container img {
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+}
+
+/* Estilos para el formulario */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para el pie de página */
+#pie-de-pagina {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#pie-de-pagina ul {
+    list-style: none;
+    padding: 0;
+}
+
+#pie-de-pagina li {
+    margin-bottom: 10px;
+}

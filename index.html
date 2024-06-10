@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramon Y Tomas Propiedades</title>
+    <link rel="stylesheet" href="./inmobiliaria-css.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="" id="logo">
+        <div id="grupo">
+            <h1 id="tittulo">Ramon Y Tomas Propiedades</h1>
+            <h2 id="Lema">Encontrar tu hogar</h2>
+        </div>
+        <nav>
+            <a href="Casas.html">Casas</a>
+            <a href="Departamentos.html">Departamentos</a>
+        </nav>
+    </header>
+    
+    <section>
+        <form id="propertyForm">
+            <!-- Tipo de Propiedad -->
+            <label for="tipoPropiedad">Tipo de Propiedad:</label>
+            <select name="tipoPropiedad" id="tipoPropiedad">
+                <option value="Departamentos">Departamentos</option>
+                <option value="Casas">Casas</option>
+            </select>
+            
+            <!-- Tipo de Operación -->
+            <label for="tipoOperacion">Tipo de Operación:</label>
+            <select name="tipoOperacion" id="tipoOperacion">
+                <option value="Alquileres">Alquileres</option>
+                <option value="Ventas">Ventas</option>
+            </select>
+            
+            <!-- Ambientes -->
+            <label for="ambientes">Ambientes:</label>
+            <select name="ambientes" id="ambientes">
+                <option value="1">1 Ambiente</option>
+                <option value="2">2 Ambientes</option>
+                <option value="3">3 Ambientes</option>
+                <option value="4">4+ Ambientes</option>
+            </select>
+            
+            <!-- Zona -->
+            <label for="zona">Zonas:</label>
+            <select name="zona" id="zona">
+                <option value="CABA">C.A.B.A.</option>
+                <option value="zonaNorte">Zona Norte</option>
+                <option value="zonaSur">Zona Sur</option>
+                <option value="zonaOeste">Zona Oeste</option>
+            </select>
+            <button type="button" id="buscarBtn">BUSCAR</button>    
+        </form>
+    </section>
+    
+    <footer id="pie-de-pagina">
+        <ul id="pagina">
+            <li id="facebook">Nos encontraran en Facebook: RamonYTomas</li>
+            <li id="whattsApp">Nos puede contactar por WhatsApp: 11-6789-2354</li>
+            <li id="mail3">Por mail: RamonYTomas@gmail.com</li>
+            <li id="Instragram">Y por Instagram: Ramon@Tomas</li>
+        </ul>
+    </footer>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            // Obtener los elementos del DOM
+            const buscarBtn = document.getElementById('buscarBtn');
+            const tipoPropiedad = document.getElementById('tipoPropiedad');
+            const tipoOperacion = document.getElementById('tipoOperacion');
+            const ambientes = document.getElementById('ambientes');
+            const zona = document.getElementById('zona');
+    
+            // Agregar un listener al botón "BUSCAR"
+            buscarBtn.addEventListener('click', function() {
+                // Obtener los valores seleccionados
+                const propiedad = tipoPropiedad.value;
+                const operacion = tipoOperacion.value;
+                const numAmbientes = ambientes.value;
+                const zonaSeleccionada = zona.value;
+    
+                // Inicializar la URL de redirección
+                let redirectUrl = '';
+    
+                // Determinar la URL de redirección basada en el tipo de propiedad
+                if (propiedad === 'Casas') {
+                    redirectUrl = 'Casas.html';
+                } else if (propiedad === 'Departamentos') {
+                    redirectUrl = 'Departamentos.html';
+                }
+    
+                // Añadir los parámetros seleccionados a la URL de redirección
+                redirectUrl += `?operacion=${operacion}&ambientes=${numAmbientes}&zona=${zonaSeleccionada}`;
+    
+                // Redirigir al usuario a la URL generada
+                window.location.href = redirectUrl;
+            });
+        });
+    </script>
+</body>
+</html>
